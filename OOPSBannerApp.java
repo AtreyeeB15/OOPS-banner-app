@@ -1,16 +1,19 @@
 /**
- * OOPS Banner App - Use Case 1
- * This class prints the literal text "OOPS" to the console.
- * @Atreyee
- * @version 2.0
+ * OOPSBannerApp UC3 - OOPS Banner Application (Use Case 3)
+ * This version uses String.join() for memory efficiency and better readability.
  */
- public class OOPSBannerApp{
-	public static void main(String[] args){
-        System.out.println(" OOOO   PPPP   SSSS ");
-        System.out.println("O    O  P   P  S    ");
-        System.out.println("O    O  PPPP   SSSS ");
-        System.out.println("O    O  P          S");
-        System.out.println(" OOOO   P      SSSS ");
+class OOPSBannerApp {
+    public static void main(String[] args) {
+        
+        // Use String.join with a single space " " as the delimiter as per the hint
+        // Each segment is adjusted to ensure vertical alignment across all 7 lines
+        
+        System.out.println(String.join(" ", "  *** ", "   *** ", "  ***** ", " **** "));
+        System.out.println(String.join(" ", " *   * ", " *   * ", " *   * ", " * "));
+        System.out.println(String.join(" ", " *   * ", " *   * ", " *   * ", " * "));
+        System.out.println(String.join(" ", " *   * ", " *   * ", " ***** ", "  *** "));
+        System.out.println(String.join(" ", " *   * ", " *   * ", " * ", "        * "));
+        System.out.println(String.join(" ", " *   * ", " *   * ", " * ", "        * "));
+        System.out.println(String.join(" ", "  *** ", "   *** ", "  * ", "     ****"));
     }
 }
-	
